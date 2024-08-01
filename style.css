@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Sniglet&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sniglet", cursive;
+  scroll-behavior: smooth !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9d423;
+}
+
+body {
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423);
+}
+
+/* Colors */
+:root {
+  --form-btn-bg-color: #264653;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Header */
+.header {
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.title {
+  color: #fff;
+  letter-spacing: 3px;
+  text-shadow: 4px 3px 6px rgba(0, 0, 0, 1);
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.form {
+  position: relative;
+}
+
+.form-input,
+.form-btn {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.form-input {
+  background: transparent;
+  padding: 10px 0;
+  width: 0;
+  text-indent: 5px;
+  font-size: 20px;
+}
+
+.form-btn {
+  width: 50px;
+  color: #fff;
+  background-color: var(--form-btn-bg-color);
+  padding: 2px 5px;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 35%;
+}
+
+.form.active .form-input {
+  background-color: #fff;
+  width: 100%;
+}
+
+.form.active .form-btn {
+  background: #fff;
+  color: tomato;
+  right: 0 !important;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  gap: 50px;
+}
+
+/* Card */
+.card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fefefe;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card-img {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 75% 30% 60% 40% / 60% 40% 60% 40%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.card-id {
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+}
+
+.card-detail {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
