@@ -1,6 +1,8 @@
-# Pokedex
+# Udemig Pokedex Project
 
-This project created By Yasin Özboğa
+This project was created by Yasin Özboğa.
+In this project, data was gotten from API and the data was displayed to users by HTML5, CSS3 and JavaScript technologies.
+In this project, the data was displayed in card form.
 
 ## Used Techs
 
